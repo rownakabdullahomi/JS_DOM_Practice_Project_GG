@@ -10,11 +10,11 @@ function calculateTriangleArea(){
     const area = 0.5 * base * height;
 
     // Display area
-    const areaSpan = document.getElementById("tri-area");
+    const areaSpan = document.getElementById("triangle-area");
     areaSpan.innerText = area;
 
     // Display area in a text box
-    const areaInput = document.getElementById("area-input");
+    const areaInput = document.getElementById("triangle-area-input");
     areaInput.style.display = "block";
     areaInput.style.textAlign = "center";
     areaInput.value = area;
