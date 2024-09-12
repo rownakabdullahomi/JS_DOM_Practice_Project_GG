@@ -7,4 +7,15 @@ function calculateTriangleArea(){
     const triangleHeightInput = document.getElementById("triangle-height").value ; // string value
     const height = parseFloat(triangleHeightInput); //convert to number
     
+    const area = 0.5 * base * height;
+
+    // Display area
+    const areaSpan = document.getElementById("tri-area");
+    areaSpan.innerText = area;
+
+    // Display area in a text box
+    const areaInput = document.getElementById("area-input");
+    areaInput.style.display = "block";
+    areaInput.style.textAlign = "center";
+    areaInput.value = area;
 }
